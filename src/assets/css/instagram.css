@@ -1,0 +1,48 @@
+.insatgram_account_div {
+  color: var(--brown);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.instaImgContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.instaImgDiv {
+  width: 24.4%;
+  height: 250px;
+}
+.instaImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.follow_us_btn {
+  background-color: var(--brown);
+  color: white;
+  display: block;
+  width: 170px;
+  text-align: center;
+  margin: auto;
+  padding: 12px 0px;
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 800px) {
+  .insatgram_account_div {
+    font-size: 1rem;
+  }
+  .instaImgDiv {
+    width: 48%;
+    margin-top: 1rem;
+  }
+  .insatgram_account_div {
+    margin-top: 10px;
+  }
+}

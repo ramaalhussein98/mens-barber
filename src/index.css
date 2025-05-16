@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --beige: #fbfaf8;
+  --brown: #49331f;
+  --light_brown: #eceae7;
+  --footer: #fcf9f2;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--brown);
+  border-radius: 32px;
+}
+@font-face {
+  font-family: "fanlste";
+  src: url("/src/assets/font/fanlste_400.otf");
+}
+@font-face {
+  font-family: "poppinsreg";
+  src: url("/src/assets/font/Poppins_Regular .ttf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("/src/assets/font/Poppins-SemiBold.ttf");
+}
+.reguler-text {
+  font-family: "poppinsreg";
+}
+.semi-bold-text {
+  font-family: "poppins";
+}
+body {
+  /* font-family: "poppins"; */
+  padding: 0;
+  margin: 0;
+  background-color: var(--beige);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "fanlste";
+}

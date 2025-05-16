@@ -1,0 +1,235 @@
+.AppBar_class {
+  background-color: var(--beige) !important;
+  box-shadow: none !important;
+}
+.navClass {
+  min-height: 100px !important;
+  padding: 0px 120px !important;
+  position: relative;
+  /* border-bottom: 1px solid var(--brown); */
+}
+.menu_icon {
+  color: var(--brown) !important;
+  margin: 0px !important;
+}
+.aboutUsText {
+  color: var(--brown);
+  font-size: 19px;
+  padding-top: 40px;
+  font-family: "poppinsreg";
+  margin-bottom: 5rem !important;
+}
+.navClass::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 84%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1px;
+  background-color: rgba(73, 51, 31, 0.3);
+}
+.book_now_btn {
+  background-color: var(--brown) !important;
+  color: white !important;
+  padding: 2px 12px !important;
+  border-radius: 0px !important;
+}
+.book_now_btn:hover {
+  transform: scale(1.05);
+  transition: ease-in-out;
+}
+.nav_links_btn {
+  all: unset !important;
+  color: var(--brown) !important;
+  padding: 0px 20px !important;
+  font-family: "poppinsreg";
+  cursor: pointer !important;
+  position: relative !important;
+}
+.nav_links_btn:hover::after {
+  content: "";
+  width: 80%; /* Set the underline to cover the full width of the button */
+  position: absolute; /* Position the underline relative to the button */
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px; /* Adjust as needed to position the underline where you want */
+  height: 2px; /* Set the height of the underline */
+  background-color: rgba(73, 51, 31, 0.3);
+}
+.DrawerStyle {
+  background-color: var(--beige) !important;
+  color: var(--brown) !important;
+  height: 100vh;
+  width: 200px;
+  padding-top: 2rem;
+}
+.ulSryleDrawer {
+  font-family: "arboria" !important;
+  padding: 1rem 0rem;
+  text-align: center;
+
+  position: relative;
+}
+.ulSryleDrawer::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  height: 0.05rem;
+  background-color: rgba(73, 51, 31, 0.3);
+}
+.ulStyleDrawer {
+  padding: 0 !important;
+}
+.listItemStyle {
+  padding: 0 !important;
+}
+.img_logo {
+  width: 250px !important;
+  object-fit: cover;
+}
+.title_salon {
+  font-size: 3rem;
+  color: var(--brown);
+  text-align: center;
+  margin-bottom: -1rem;
+  margin-top: 1rem;
+
+  font-family: "fanlste";
+}
+.FooterContainer {
+  background-color: var(--footer);
+
+  padding: 8rem 5rem;
+  
+  position: relative;
+}
+.FooterContainer::after {
+  position: absolute;
+  content: "";
+  border: 1px solid var(--brown);
+  width: 90%;
+  height: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.imgFooter {
+  width: 80%;
+}
+.footer_section {
+  color: var(--brown);
+
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    font-family: "fanlste";
+  }
+  .footerUl {
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+
+    li {
+      padding: 5px 0px;
+    }
+  }
+}
+.mainTitle {
+  position: relative;
+  color: var(--brown);
+  position: relative;
+  width: 100%;
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+    font-family: "fanlste";
+  }
+  .description {
+    font-size: 1.2rem;
+    margin-top: 0px;
+    /* font-family: "poppins_regular" !important; */
+  }
+}
+.mainTitle::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: rgba(73, 51, 31, 0.3);
+  bottom: -20px;
+  left: 0;
+  height: 1px;
+}
+a {
+  color: var(--brown);
+  text-decoration: none;
+}
+.AboutUsContainer {
+  padding: 0px 120px;
+  margin: auto;
+}
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .mainTitle {
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+  .AboutUsContainer {
+    padding: 0px 10px;
+  }
+  .navClass {
+    min-height: 80px !important;
+    padding: 0px 10px !important;
+  }
+  .img_logo {
+    width: 150px !important;
+  }
+  .book_now_btn {
+    padding: 2px 12px !important;
+    font-size: 13px !important;
+  }
+  .navClass::after {
+    width: 96%;
+  }
+  .FooterContainer {
+    padding: 5rem 1rem;
+  }
+  .imgFooter {
+    width: 65%;
+    display: block;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+  .title_salon {
+    font-size: 2rem;
+  }
+  .aboutUsText {
+    font-size: 1rem;
+  }
+  .FooterContainer {
+    padding: 2rem 1rem;
+  }
+  /* .AboutUsContainer {
+    padding: 0px 10px;
+  } */
+}

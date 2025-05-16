@@ -1,0 +1,39 @@
+.langingImgContiner {
+  width: 100%;
+  position: relative;
+}
+.langingImgContinerImg {
+  width: 100%;
+  object-fit: cover;
+}
+.MainSectionBox {
+  position: absolute;
+  top: 20%;
+  left: 7%;
+  color: var(--brown) !important;
+  font-size: 3.5rem;
+  font-family: "fanlste";
+}
+.falste {
+  font-family: "fanlste";
+}
+.bookNowMainSection {
+  background-color: var(--brown) !important;
+  color: white !important;
+  border-radius: 0 !important;
+  font-size: 2rem !important;
+  padding: 5px 30px !important;
+  font-family: "poppinsreg";
+}
+@media screen and (max-width: 800px) {
+  .MainSectionBox {
+    top: 4rem;
+    left: 50%;
+    font-size: 30px;
+    transform: translateX(-50%);
+    width: max-content;
+  }
+  .bookNowMainSection {
+    font-size: 1rem !important;
+  }
+}
